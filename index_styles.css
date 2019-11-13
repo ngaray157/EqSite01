@@ -1,8 +1,21 @@
 @charset "utf-8";
+
+@keyframes hover{
+    from {color:rgb(219,112,147);}
+    to {color:rgb(192, 13, 73);}
+}
+
 /* General Styles */
 html{
     background-color:rgb(255,228,225);
-    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif;  */
+    font-family: 'Work Sans', sans-serif;
+}
+
+body{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 header img{
@@ -11,7 +24,6 @@ header img{
     padding-left: 40px;
     padding-top: 20px;
 }
-
 
 section#secondLine{
     background-color: whitesmoke;
@@ -28,6 +40,7 @@ section#intro p#firstLine{
     font-size: 4.5em;
     text-align: center;
     font-weight: bold;
+    font-style: italic;
     padding-bottom: 2px;
     padding-top: 220px;
     margin-bottom: 100px;
@@ -38,16 +51,17 @@ section#intro p#secondLine{
     color:rgb(219,112,147);
     font-size: 2.5em;
     text-align: center;
-    font-weight: normal;
+    font-weight: lighter;
     padding-bottom: 180px;
     padding-top: 0px;
     line-height: 3px;
+    font-family: 'Work Sans', sans-serif;
 }
 
 section#second{
     background-color:rgb(249,249,249);
     margin-bottom: 300px;
-    padding-bottom: 750px;
+    padding-bottom: 220px;
 }
 
 
@@ -61,36 +75,49 @@ section#second p#hi{
 section#second p#hi2{
     color: rgb(219,112,147);
     text-align: center;
-    padding-top: 15px;
+    padding-top: 5px;
     font-size: 1.7em;
-    font-weight: normal;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
-     'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: lighter;
+    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+     'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+     font-family: 'Work Sans', sans-serif;
 }
 
 section#second img{
-    padding-top: 375px;
+    padding-top: 230px;
     display: block;
     margin: 0 auto;
 }
 
-section#second p#focus{
+div.whitesection{
+    margin: auto auto;
+}
+
+div.secondpinksection{
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 250px;
+}
+
+section#third p#focus{
     font-size: 2em;
     font-weight: bold;
     color:rgb(219,112,147);
     text-align: center;
-    padding-top: 14em;
+    padding-bottom: 0px;
 }
 
-section#second p#focusInfo{
+section#third p#focusInfo{
     color: rgb(219,112,147);
     text-align: center;
-    padding-top: 15px;
+    /* padding-top: 15px; */
     font-size: 1.7em;
-    font-weight: normal;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
-     'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: lighter;
+    font-family: 'Work Sans', sans-serif;
+    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+     'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
 }
+
 
 /* Top Right Navigation Styles */
 
@@ -108,20 +135,46 @@ nav.topRight ul{
     list-style-type: none;
     font-size: 1.3em;
 }
-nav.topRight a{
+nav.topRight a:link, nav.topRight a:visited{
     color:rgb(219,112,147);     
-    /* padding-top: 20px;
-    padding-bottom: 35px;
-    padding-left: 5px;
-    padding-right: 5px; */
     padding-top: 40px;
-    margin-right: 30px;
+    margin-right: 80px;
 }
+
+nav.topRight a#other:hover, nav.topRight a#other:active{
+    animation-name: hover;
+    animation-duration: 1.3s;     /* this fades the color of the links to a different color */
+    animation-fill-mode: forwards;
+    /* animation-timing-function: ease-out; */
+    padding-top: 40px;
+    margin-right: 80px;
+}
+
+/* fancy nav thing */
+nav.topRight a#current{
+    color:rgb(192, 13, 73);
+    padding-top: 40px;
+    margin-right: 80px;
+}
+
+
+
+/* Footer Stuff */
 
 footer{
     width: 100%;
     position: absolute;
-    height: 3em;
-    background-color:rgba(219,112,147,0.8);
-    color:rgb(243, 156, 185)
+    height: 8em;
+    background-color:rgba(219,112,147,0.3);
+    color:rgb(219,112,147);
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+footer p#copyright{
+    text-align: center;
+    padding-top: 33px;
+}
+
+footer nav{
+    text-align: center;
 }
