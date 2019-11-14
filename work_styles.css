@@ -25,7 +25,7 @@ header img{
     padding-top: 20px;
 }
 
-section#intro p#firstLine{
+section#intro p#pastwork{
     color:rgb(219,112,147);
     font-size: 4.5em;
     text-align: center;
@@ -36,91 +36,7 @@ section#intro p#firstLine{
     margin-bottom: 100px;
     line-height: 4px;
 }
-
-section#intro p#secondLine{
-    color:rgb(219,112,147);
-    font-size: 2.5em;
-    text-align: center;
-    font-weight: lighter;
-    padding-bottom: 180px;
-    padding-top: 0px;
-    line-height: 3px;
-    font-family: 'Work Sans', sans-serif;
-}
-
-section#secondLine{
-    background-color: whitesmoke;
-    width: 100%;
-    padding-bottom: 1024px;
-}
-
-section#intro p#secondLine{
-    font-family: 'Work Sans', sans-serif;
-}
-
-section#second{
-    background-color:rgb(249,249,249);
-    margin-bottom: 300px;
-    padding-bottom: 220px;
-}
-
-
-section#second p#hi{
-    font-size: 2em;
-    font-weight: bold;
-    color: rgb(219,112,147);
-    text-align: center;
-}
-
-section#second p#hi2{
-    color: rgb(219,112,147);
-    text-align: center;
-    padding-top: 5px;
-    font-size: 1.7em;
-    font-weight: lighter;
-    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
-     'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
-     font-family: 'Work Sans', sans-serif;
-}
-
-section#second img{
-    padding-top: 230px;
-    display: block;
-    margin: 0 auto;
-}
-
-div.whitesection{
-    margin: auto auto;
-}
-
-div.secondpinksection{
-    margin-left: auto;
-    margin-right: auto;
-    padding-bottom: 250px;
-}
-
-section#third p#focus{
-    font-size: 2em;
-    font-weight: bold;
-    color:rgb(219,112,147);
-    text-align: center;
-    padding-bottom: 0px;
-}
-
-section#third p#focusInfo{
-    color: rgb(219,112,147);
-    text-align: center;
-    /* padding-top: 15px; */
-    font-size: 1.7em;
-    font-weight: lighter;
-    font-family: 'Work Sans', sans-serif;
-    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
-     'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
-}
-
-
-/* Top Right Navigation Styles */
-
+/* Top Right Nav Styles */
 nav a{
     text-decoration: none;
 }
@@ -151,13 +67,12 @@ nav.topRight a#other:hover, nav.topRight a#other:active{
 }
 
 /* fancy nav thing */
+
 nav.topRight a#current{
     color:rgb(192, 13, 73);
     padding-top: 40px;
     margin-right: 80px;
 }
-
-
 
 /* Footer Stuff */
 
@@ -198,5 +113,3 @@ footer a:link, footer a:visited{
     padding-top: 40px;
     margin-right: 80px; 
 }
-
- /* this fades the color of the top right links to a different color */
