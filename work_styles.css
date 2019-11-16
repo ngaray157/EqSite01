@@ -19,8 +19,8 @@ body{
 }
 
 img#weight_page{
-    width: 30%;
-    height: 250px;
+    width: 35%;
+    height: 400px;
 }
 
 header img{
@@ -40,6 +40,12 @@ section#intro p#pastwork{
     padding-top: 220px;
     margin-bottom: 100px;
     line-height: 4px;
+}
+
+section#photo1 img#weight_page{
+    padding-left: 615px;
+    padding-bottom: 400px;
+    padding-top: 200px;
 }
 /* Top Right Nav Styles */
 

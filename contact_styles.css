@@ -25,7 +25,7 @@ header img{
     padding-top: 20px;
 }
 
-section#intro p#contactme{
+section#contactme p#contactfirst{
     color:rgb(219,112,147);
     font-size: 4.5em;
     text-align: center;
@@ -35,6 +35,25 @@ section#intro p#contactme{
     padding-top: 220px;
     margin-bottom: 100px;
     line-height: 4px;
+}
+
+section#contactme p#contactsecond{
+    color:rgb(219,112,147);
+    font-size: 2em;
+    text-align: center;
+    font-weight: lighter;
+    padding-bottom: 180px;
+    padding-top: 0px;
+    line-height: 3px;
+    font-family: 'Work Sans', sans-serif;
+}
+
+/* Google Form Styles */
+
+section#thirdform div#googleform iframe{
+    position: relative;
+    padding-left: 630px;
+    padding-top: 2px;
 }
 
 /* Navigation Styles */
@@ -74,4 +93,44 @@ nav.topRight a#current{
     color:rgb(192, 13, 73);
     padding-top: 40px;
     margin-right: 80px;
+}
+
+/* Footer Stuff */
+
+footer{
+    width: 100%;
+    position: absolute;
+    height: 8em;
+    background-color:rgba(219,112,147,0.3);
+    color:rgb(219,112,147);
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align: center;
+}
+
+footer a{
+    text-decoration: none;
+}
+
+footer div#links{
+    padding-top: 20px;
+    padding-left: 90px;
+}
+footer div#copyright{
+    display: block;
+    padding-top: 67px;
+}
+
+footer a#other:hover, footer a#other:active{
+    animation-name: hover;
+    animation-duration: 1.3s;     
+    animation-fill-mode: forwards;
+    /* padding-top: 40px; */
+    padding-top: 60px;
+    margin-right: 80px;
+}
+
+footer a:link, footer a:visited{
+    color:rgb(219,112,147);   
+    padding-top: 40px;
+    margin-right: 80px; 
 }
