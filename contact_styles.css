@@ -16,6 +16,7 @@ body{
     width: 100%;
     margin-left: auto;
     margin-right: auto;
+    place-items: center;
 }
 
 header img{
@@ -48,13 +49,6 @@ section#contactme p#contactsecond{
     font-family: 'Work Sans', sans-serif;
 }
 
-/* Google Form Styles */
-
-section#thirdform div#googleform iframe{
-    position: relative;
-    padding-left: 630px;
-    padding-top: 2px;
-}
 
 /* Navigation Styles */
 
@@ -94,6 +88,8 @@ nav.topRight a#current{
     padding-top: 40px;
     margin-right: 80px;
 }
+
+/* Form Styles */
 
 /* Footer Stuff */
 
