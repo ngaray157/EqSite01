@@ -20,3 +20,8 @@ header > nav a{
     display: block;
     width: 100%;
 }
+
+/* Body Layout */
+body{
+    text-align: center;
+}

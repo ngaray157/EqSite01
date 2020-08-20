@@ -1,132 +1,195 @@
 @charset "UTF-8";
 
-@keyframes hover{
-    from {color:rgb(219,112,147);}
-    to {color:rgb(192, 13, 73);}
+@keyframes hover {
+  from {
+    color: rgb(219, 112, 147);
+  }
+  to {
+    color: rgb(192, 13, 73);
+  }
 }
 /* General Styles */
 
-html{
-    background-color:rgb(255,228,225);
-    /* font-family: Verdana, Geneva, Tahoma, sans-serif;  */
-    font-family: 'Work Sans', sans-serif;
+html {
+  background-color: rgb(255, 228, 225);
+  /* font-family: Verdana, Geneva, Tahoma, sans-serif;  */
+  font-family: "Work Sans", sans-serif;
 }
 
-body{
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    place-items: center;
+body {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  place-items: center;
 }
 
-header img{
-    margin-right: auto;
-    float: left;
-    padding-left: 40px;
-    padding-top: 20px;
+header img {
+  margin-right: auto;
+  float: left;
+  padding-left: 40px;
+  padding-top: 20px;
 }
 
-section#contactme p#contactfirst{
-    color:rgb(219,112,147);
-    font-size: 4.5em;
-    text-align: center;
-    font-weight: bold;
-    font-style: italic;
-    padding-bottom: 2px;
-    padding-top: 220px;
-    margin-bottom: 100px;
-    line-height: 4px;
+section#contactme p#contactfirst {
+  color: rgb(219, 112, 147);
+  font-size: 4.5em;
+  text-align: center;
+  font-weight: bold;
+  font-style: italic;
+  padding-bottom: 2px;
+  padding-top: 220px;
+  margin-bottom: 100px;
+  line-height: 4px;
 }
 
-section#contactme p#contactsecond{
-    color:rgb(219,112,147);
-    font-size: 2em;
-    text-align: center;
-    font-weight: lighter;
-    padding-bottom: 180px;
-    padding-top: 0px;
-    line-height: 3px;
-    font-family: 'Work Sans', sans-serif;
+section#contactme p#contactsecond {
+  color: rgb(219, 112, 147);
+  font-size: 2em;
+  text-align: center;
+  font-weight: lighter;
+  padding-bottom: 180px;
+  padding-top: 0px;
+  line-height: 3px;
+  font-family: "Work Sans", sans-serif;
 }
-
 
 /* Navigation Styles */
 
-nav a{
-    text-decoration: none;
+nav a {
+  text-decoration: none;
 }
 
-header nav.topRight{
-    margin-left: auto;
-    margin-right: 2px;
-    width: 24%;
+header nav.topRight {
+  margin-left: auto;
+  margin-right: 2px;
+  width: 24%;
 }
 
-nav.topRight ul{
-    list-style-type: none;
-    font-size: 1.3em;
+nav.topRight ul {
+  list-style-type: none;
+  font-size: 1.3em;
 }
-nav.topRight a:link, nav.topRight a:visited{
-    color:rgb(219,112,147);     
-    padding-top: 40px;
-    margin-right: 80px;
+nav.topRight a:link,
+nav.topRight a:visited {
+  color: rgb(219, 112, 147);
+  padding-top: 40px;
+  margin-right: 80px;
 }
 
-nav.topRight a#other:hover, nav.topRight a#other:active{
-    animation-name: hover;
-    animation-duration: 1.3s;     /* this fades the color of the top right links to a different color */
-    animation-fill-mode: forwards;
-    /* animation-timing-function: ease-out; */
-    padding-top: 40px;
-    margin-right: 80px;
+nav.topRight a#other:hover,
+nav.topRight a#other:active {
+  animation-name: hover;
+  animation-duration: 1.3s; /* this fades the color of the top right links to a different color */
+  animation-fill-mode: forwards;
+  /* animation-timing-function: ease-out; */
+  padding-top: 40px;
+  margin-right: 80px;
 }
 
 /* fancy nav thing */
 
-nav.topRight a#current{
-    color:rgb(192, 13, 73);
-    padding-top: 40px;
-    margin-right: 80px;
+nav.topRight a#current {
+  color: rgb(192, 13, 73);
+  padding-top: 40px;
+  margin-right: 80px;
 }
 
 /* Form Styles */
 
-/* Footer Stuff */
-
-footer{
-    width: 100%;
-    position: absolute;
-    height: 8em;
-    background-color:rgba(219,112,147,0.3);
-    color:rgb(219,112,147);
-    font-family: 'Roboto Condensed', sans-serif;
-    text-align: center;
+#formSpace {
+  font-size: 1.5em;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
 
-footer a{
-    text-decoration: none;
+/* #formSpace form{
+    width: max-content;
+    border-width: 5px;
+    border-style: solid;
+    /* margin: 0px;
+    padding: 0px;
+} */
+
+label {
+  color: rgb(219, 112, 147);
 }
 
-footer div#links{
-    padding-top: 20px;
-    padding-left: 90px;
-}
-footer div#copyright{
-    display: block;
-    padding-top: 67px;
-}
-
-footer a#other:hover, footer a#other:active{
-    animation-name: hover;
-    animation-duration: 1.3s;     
-    animation-fill-mode: forwards;
-    /* padding-top: 40px; */
-    padding-top: 60px;
-    margin-right: 80px;
+input {
+  width: 20%;
+  height: 3em;
+  background-color: rgb(255, 228, 225);
+  border: 0;
+  outline: 0;
+  border-bottom: 2px solid rgb(219, 112, 147);
+  color: black;
+  font-size: 3em;
 }
 
-footer a:link, footer a:visited{
-    color:rgb(219,112,147);   
-    padding-top: 40px;
-    margin-right: 80px; 
+input:focus {
+  outline: 0;
+  border-bottom: 2px solid rgb(192, 13, 73);
+}
+
+[placeholder]:focus::-webkit-input-placeholder {
+  transition: text-indent 0.3s 0.3s ease;
+  text-indent: -100%;
+  opacity: 1;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"] {
+  font-size: 20px;
+  margin: 10px;
+}
+
+/* ///////////////////// */
+/* / Footer Stuff ///////*/
+/* /////////////////// */
+
+footer {
+  width: 100%;
+  position: absolute;
+  font-size: 1.5em;
+  height: 5em;
+  background-color: rgba(219, 112, 147, 0.3);
+  color: rgb(219, 112, 147);
+  font-family: "Roboto Condensed", sans-serif;
+  text-align: center;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+footer div#links {
+  padding-top: 20px;
+  padding-left: 90px;
+}
+footer div#copyright {
+  display: block;
+}
+
+footer a#other:hover,
+footer a#other:active {
+  animation-name: hover;
+  animation-duration: 1.3s;
+  animation-fill-mode: forwards;
+  /* padding-top: 40px; */
+  padding-top: 60px;
+  margin-right: 80px;
+}
+
+footer a:link,
+footer a:visited {
+  color: rgb(219, 112, 147);
+  padding-top: 40px;
+  margin-right: 80px;
+}
+
+/* Viewing Window stuff */
+
+.viewingWindow{
+    height: 100vh;
 }

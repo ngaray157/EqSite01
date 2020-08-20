@@ -198,3 +198,9 @@ footer a:link, footer a:visited{
     padding-top: 40px;
     margin-right: 80px; 
 }
+
+/* Index Viewing Window Stuff */
+
+.indexView{
+    height: 100vh;
+}
