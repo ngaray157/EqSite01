@@ -1,11 +1,16 @@
 @charset "utf-8";
 
+/* ANIMATION FOR NAV BAR HOVER COLOR CHANGE */
+
 @keyframes hover{
     from {color:rgb(219,112,147);}
     to {color:rgb(192, 13, 73);}
 }
 
-/* General Styles */
+/* //////////////////// */
+/* GENERAL PAGE STYLES */
+/* ////////////////// */
+
 html{
     background-color:rgb(255,228,225);
     /* font-family: Verdana, Geneva, Tahoma, sans-serif;  */
@@ -19,98 +24,129 @@ body{
 }
 
 header img{
-    margin-right: auto;
     float: left;
     padding-left: 40px;
     padding-top: 20px;
 }
 
-section#intro p#firstLine{
+
+/* //////////////////////////////// */
+/* INTRODUCTION PINK DIV CONTAINER */
+/* ////////////////////////////// */
+
+.indexView{
+    height: 100vh;
+}
+
+section#introBlurb{
+    line-spacing: 4px;
+    text-align: center;
+    padding: 260px;
+}
+
+p#firstLine{
     color:rgb(219,112,147);
     font-size: 4.5em;
-    text-align: center;
     font-weight: bold;
     font-style: italic;
-    padding-bottom: 2px;
-    padding-top: 220px;
-    margin-bottom: 100px;
+    font-family: 'Work Sans', sans-serif;
+    margin-left: auto;
+    margin-right: auto;
     line-height: 4px;
 }
 
-section#intro p#secondLine{
+p#secondLine{ 
     color:rgb(219,112,147);
     font-size: 2.5em;
-    text-align: center;
     font-weight: lighter;
-    padding-bottom: 180px;
-    padding-top: 0px;
+    font-family: 'Work Sans', sans-serif;
+    margin-left: auto;
+    margin-right: auto;
     line-height: 3px;
-    font-family: 'Work Sans', sans-serif;
 }
 
-section#secondLine{
+
+/* ////////////////////////////// */
+/* GREETINGS WHITE DIV CONTAINER */
+/* //////////////////////////// */
+
+
+#greetingBox{
+    letter-spacing: 4px;
     background-color: whitesmoke;
-    width: 100%;
-    padding-bottom: 1024px;
+    text-align: center;
 }
 
-section#intro p#secondLine{
-    font-family: 'Work Sans', sans-serif;
+#greetingBox img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-section#second{
-    background-color:rgb(249,249,249);
-    margin-bottom: 300px;
-    padding-bottom: 220px;
-}
-
-
-section#second p#hi{
+#greetingBox p#hi{
     font-size: 2em;
     font-weight: bold;
     color: rgb(219,112,147);
-    text-align: center;
-}
-
-section#second p#hi2{
-    color: rgb(219,112,147);
-    text-align: center;
-    padding-top: 5px;
-    font-size: 1.7em;
-    font-weight: lighter;
-    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
-     'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
-     font-family: 'Work Sans', sans-serif;
-}
-
-section#second img{
-    padding-top: 230px;
-    display: block;
-    margin: 0 auto;
-}
-
-div.whitesection{
-    margin: auto auto;
-}
-
-div.secondpinksection{
     margin-left: auto;
-    margin-right: auto;
-    padding-bottom: 250px;
+    margin-right: auto;;
 }
 
-section#third p#focus{
+#greetingBox p#hi2{
+    color: rgb(219,112,147);
+    padding-top: 5px;
+    font-size: 1.6em;
+    font-weight: lighter;
+    font-family: 'Work Sans', sans-serif;
+
+    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+}
+
+section#greetingBlurb{
+    padding: 200px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+/* //////////////// */
+/* SKILLS PINK DIV */
+/* ////////////// */
+
+
+
+#skillBox{
+    text-align: center;
+    background-color: rgb(255,228,225);
+    letter-spacing: 4px;
+}
+
+p#skill{
     font-size: 2em;
     font-weight: bold;
     color:rgb(219,112,147);
-    text-align: center;
-    padding-bottom: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+p#skillInfo{
+    color: rgb(219,112,147);
+    font-size: 1.7em;
+    font-weight: lighter;
+    font-family: 'Work Sans', sans-serif;
+    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+     'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
 }
 
-section#third p#focusInfo{
+p#focus{
+    font-size: 2em;
+    font-weight: bold;
+    color:rgb(219,112,147);
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+p#focusInfo{
     color: rgb(219,112,147);
-    text-align: center;
-    /* padding-top: 15px; */
     font-size: 1.7em;
     font-weight: lighter;
     font-family: 'Work Sans', sans-serif;
@@ -119,16 +155,34 @@ section#third p#focusInfo{
 }
 
 
-/* Top Right Navigation Styles */
+section#skillBlurb{
+    margin-right: auto;
+    margin-left: auto;
+    padding: 100px;
+}
+
+section#focusBlurb{
+    margin-right: auto;
+    margin-left: auto;
+    padding: 100px;
+}
+
+
+
+/* ///////////////////////// */
+/* TOP RIGHT NAV BAR STYLES */
+/* /////////////////////// */
 
 nav a{
     text-decoration: none;
 }
 
-header nav.topRight{
+nav.topRight{
     margin-left: auto;
-    margin-right: 2px;
+    margin-right: 10px;
     width: 24%;
+    padding-top: 10px;
+    letter-spacing: 3px;
 }
 
 nav.topRight ul{
@@ -143,7 +197,8 @@ nav.topRight a:link, nav.topRight a:visited{
 
 nav.topRight a#other:hover, nav.topRight a#other:active{
     animation-name: hover;
-    animation-duration: 1.3s;     /* this fades the color of the top right links to a different color */
+    animation-duration: 1.3s;     
+    /* this fades the color of the top right links to a different color */
     animation-fill-mode: forwards;
     /* animation-timing-function: ease-out; */
     padding-top: 40px;
@@ -158,13 +213,15 @@ nav.topRight a#current{
 }
 
 
-
-/* Footer Stuff */
+/* ////////////// */
+/* FOOTER STYLES */
+/* //////////// */
 
 footer{
     width: 100%;
     position: absolute;
-    height: 8em;
+    font-size: 1.5em;
+    height: 5em;
     background-color:rgba(219,112,147,0.3);
     color:rgb(219,112,147);
     font-family: 'Roboto Condensed', sans-serif;
@@ -181,7 +238,7 @@ footer div#links{
 }
 footer div#copyright{
     display: block;
-    padding-top: 67px;
+    /* padding-top: 67px; */
 }
 
 footer a#other:hover, footer a#other:active{
@@ -197,10 +254,4 @@ footer a:link, footer a:visited{
     color:rgb(219,112,147);   
     padding-top: 40px;
     margin-right: 80px; 
-}
-
-/* Index Viewing Window Stuff */
-
-.indexView{
-    height: 100vh;
 }

@@ -1,66 +1,80 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8"/>
-        <title>Home</title>
-        <link href="index_layout.css" rel="stylesheet"/>
-        <link href="index_styles.css" rel="stylesheet"/>
-        <!-- <link href="reset.css" rel="stylesheet"/> -->
-        <!-- <link rel="icon" type="image" href="nicole.jpg"/> --> 
-    </head>
-    <body>
-        <div class="indexView">
-            <header>
-                <img src="selflogo.png" alt="minimalistic drawing of nicole"
-                    width="130px" height="139px"> 
-                <nav class="topRight">
-                    <ul>
-                        <li><a id="current" href="index.html">About</a></li>
-                        <li><a id="other" href="work.html">Work</a></li>
-                        <li><a id="other" href="contact.html">Contact</a></li>
-                    </ul> 
-                </nav>
-            </header>
-            <section id="intro">
-                <p id="firstLine">I'm Nicole.</p>
-                <p id="secondLine">a web developer.</p>
-            </section>
-        </div>
-        
-        <div class="indexView">
-            <section id="second">
-            <div class="whitesection">
-                <img src="selflogo.png" alt="minimalistic drawing of nicole"
-                width="130px" height="139px">
-                <p id="hi"> 
-                    Greetings.
-                </p>
-                <p id="hi2">
-                    I'm a web developer based in Peoria, Arizona. <br> I enjoy developing
-                    websites for web and mobile devices.
-                </p>
-            </div>
-        </div>
 
-            <!-- <p id="focus">My focus.</p>
-            <p id="focusInfo">I focus on creating simplistic website that <br> get straight
-            to the point and are very easy on the eyes.</p> -->
+<head>
+    <meta charset="UTF-8" />
+    <title>Home</title>
+    <link href="index_layout.css" rel="stylesheet" />
+    <link href="index_styles.css" rel="stylesheet" />
+    <!-- <link href="reset.css" rel="stylesheet"/> -->
+    <!-- <link rel="icon" type="image" href="nicole.jpg"/> -->
+</head>
 
+<body>
+    <div id="introBox" class="indexView">
+        <header>
+            <a href="index.html"><img src="selflogo.png" alt="minimalistic drawing of nicole" width="130px"
+                    height="139px"></a>
+            <nav class="topRight">
+                <ul>
+                    <li><a id="current" href="index.html">About</a></li>
+                    <li><a id="other" href="work.html">Work</a></li>
+                    <li><a id="other" href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="introBlurb">
+            <p id="firstLine">I'm Nicole.</p>
+            <p id="secondLine">a web developer.</p>
         </section>
-        <div class="indexView">
-            <section id="third">
-                    <p id="focus">My skills.</p>
-                    <p id="focusInfo">I am up to date with HTML5 and CSS3. I know <br> Binary and I can easily perform
-                        mathematical problems.
-            </section>
-        </div>
-    </body>
+
+    </div>
+
+    <div id="greetingBox" class="indexView">
+        <section id="greetingBlurb">
+            <img src="selflogo.png" alt="minimalistic drawing of nicole" width="130px" height="139px">
+            <p id="hi">
+                Greetings.
+            </p>
+            <p id="hi2">
+                I'm a web developer based in Peoria, Arizona. <br> I enjoy developing
+                websites for web and mobile devices.
+            </p>
+        </section>
+    </div>
+
+    <div id="skillBox" class="indexView">
+        <section id="skillBlurb">
+            <p id="skill">
+                My skills.
+            </p>
+            <p id="skillInfo">
+                I am up to date with HTML5 and CSS3. I know <br> Binary and I can easily perform
+                mathematical problems.
+            </p>
+        </section>
+        <section id="focusBlurb">
+            <p id="focus">
+                My focus.
+            </p>
+            <p id="focusInfo">
+                I focus on creating simplistic websites that <br> get straight
+                to the point, but remain easy on the eyes.
+            </p>
+        </section>
+    </div>
 
     <footer>
         <div id="links">
-        <a id="other" href="tel:+4804927719">480-492-7719</a>
-        <a id="other" href="mailto:ngaray157@west-mec.org">ngaray157@west-mec.org</a>
+            <a id="other" href="tel:+4804927719">480-492-7719</a>
+            <a id="other" href="mailto:ngaray157@west-mec.org">ngaray157@west-mec.org</a>
         </div>
-        <div id="copyright">Nicole Garay © All rights reserved.</div>
+
+        <div id="copyright">
+            Nicole Garay © All rights reserved.
+        </div>
+
     </footer>
-</html> 
+
+</html>
