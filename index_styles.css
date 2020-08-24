@@ -1,6 +1,7 @@
 @charset "utf-8";
-
+/* ///////////////////////////////////////// */
 /* ANIMATION FOR NAV BAR HOVER COLOR CHANGE */
+/* /////////////////////////////////////// */
 
 @keyframes hover{
     from {color:rgb(219,112,147);}
@@ -10,6 +11,7 @@
 /* //////////////////// */
 /* GENERAL PAGE STYLES */
 /* ////////////////// */
+
 
 html{
     background-color:rgb(255,228,225);
@@ -23,10 +25,15 @@ body{
     margin-right: auto;
 }
 
+
 header img{
     float: left;
     padding-left: 40px;
     padding-top: 20px;
+ }  
+
+.indexView {
+    height: 100vh;
 }
 
 
@@ -34,35 +41,34 @@ header img{
 /* INTRODUCTION PINK DIV CONTAINER */
 /* ////////////////////////////// */
 
-.indexView{
-    height: 100vh;
+#introContainer {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+
+    background-color:rgb(255,228,225);
+    width: 100%;
+    
 }
 
-section#introBlurb{
-    line-spacing: 4px;
+section#introBlurb {
     text-align: center;
-    padding: 260px;
 }
 
-p#firstLine{
+p#firstLine {
     color:rgb(219,112,147);
     font-size: 4.5em;
     font-weight: bold;
     font-style: italic;
     font-family: 'Work Sans', sans-serif;
-    margin-left: auto;
-    margin-right: auto;
-    line-height: 4px;
+    /* line-height: 4px; */
 }
 
-p#secondLine{ 
+p#secondLine { 
     color:rgb(219,112,147);
     font-size: 2.5em;
     font-weight: lighter;
-    font-family: 'Work Sans', sans-serif;
-    margin-left: auto;
-    margin-right: auto;
-    line-height: 3px;
 }
 
 
@@ -71,19 +77,20 @@ p#secondLine{
 /* //////////////////////////// */
 
 
-#greetingBox{
+#greetingContainer {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
     letter-spacing: 4px;
     background-color: whitesmoke;
     text-align: center;
 }
 
-#greetingBox img{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
 
-#greetingBox p#hi{
+#greetingContainer p#hi {
     font-size: 2em;
     font-weight: bold;
     color: rgb(219,112,147);
@@ -91,9 +98,8 @@ p#secondLine{
     margin-right: auto;;
 }
 
-#greetingBox p#hi2{
+#greetingContainer p#hi2{
     color: rgb(219,112,147);
-    padding-top: 5px;
     font-size: 1.6em;
     font-weight: lighter;
     font-family: 'Work Sans', sans-serif;
@@ -102,11 +108,11 @@ p#secondLine{
     'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
 }
 
-section#greetingBlurb{
+/* section#greetingBlurb{
     padding: 200px;
     margin-right: auto;
     margin-left: auto;
-}
+} */
 
 
 /* //////////////// */
@@ -114,11 +120,24 @@ section#greetingBlurb{
 /* ////////////// */
 
 
+#skillContainer{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
 
-#skillBox{
     text-align: center;
     background-color: rgb(255,228,225);
     letter-spacing: 4px;
+    width: 100%;
+}
+
+section#focusBlurb {
+    padding: 10px;
+}
+
+section#focusBlurb {
+    padding: 10px;
 }
 
 p#skill{
@@ -155,7 +174,7 @@ p#focusInfo{
 }
 
 
-section#skillBlurb{
+/* section#skillBlurb{
     margin-right: auto;
     margin-left: auto;
     padding: 100px;
@@ -165,93 +184,99 @@ section#focusBlurb{
     margin-right: auto;
     margin-left: auto;
     padding: 100px;
-}
+} */
 
 
 
 /* ///////////////////////// */
 /* TOP RIGHT NAV BAR STYLES */
 /* /////////////////////// */
+/* UPDATED WITH FLEX BOX */
 
-nav a{
-    text-decoration: none;
-}
+.topRight {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
 
-nav.topRight{
-    margin-left: auto;
-    margin-right: 10px;
-    width: 24%;
-    padding-top: 10px;
+    list-style-type: none;
+    margin: 0px;
+    background-color:rgb(255,228,225);
+    font-size: 1.3em;
     letter-spacing: 3px;
 }
 
-nav.topRight ul{
-    list-style-type: none;
-    font-size: 1.3em;
-}
-nav.topRight a:link, nav.topRight a:visited{
-    color:rgb(219,112,147);     
-    padding-top: 40px;
-    margin-right: 80px;
+.topRight a {
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+    color: rgb(219,112,147);
 }
 
-nav.topRight a#other:hover, nav.topRight a#other:active{
+.topRight a#other:hover, .topRight a#other:active {
+    color: rgb(219,112,147);
+}
+
+.topRight a#other:hover, .topRight a#other:active {
     animation-name: hover;
-    animation-duration: 1.3s;     
-    /* this fades the color of the top right links to a different color */
-    animation-fill-mode: forwards;
+    animation-duration: 1.3s;
+
+     /* this fades the color of the top right links to a different color */
+    /* animation-fill-mode: forwards; */
     /* animation-timing-function: ease-out; */
-    padding-top: 40px;
-    margin-right: 80px;
 }
 
-/* fancy nav thing */
-nav.topRight a#current{
+.topRight a#current {
     color:rgb(192, 13, 73);
-    padding-top: 40px;
-    margin-right: 80px;
 }
+
 
 
 /* ////////////// */
 /* FOOTER STYLES */
 /* //////////// */
+/* UPDATED WITH FLEX BOXES */
 
-footer{
-    width: 100%;
-    position: absolute;
+footer{ 
+    display: flex;
+    flex-flow: column wrap;
+    /* justify-content: center; */
+    /* padding: 5px; */
+    
     font-size: 1.5em;
-    height: 5em;
-    background-color:rgba(219,112,147,0.3);
+    background-color: rgba(219,112,147,0.3);
     color:rgb(219,112,147);
     font-family: 'Roboto Condensed', sans-serif;
-    text-align: center;
+    position: absolute;
+    width: 100%;
 }
 
 footer a{
     text-decoration: none;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: flex-end;
+    padding: 5px;
 }
 
-footer div#links{
-    padding-top: 20px;
-    padding-left: 90px;
-}
-footer div#copyright{
-    display: block;
-    /* padding-top: 67px; */
-}
-
-footer a#other:hover, footer a#other:active{
+footer a#other:hover, footer a#other:active{ 
     animation-name: hover;
     animation-duration: 1.3s;     
     animation-fill-mode: forwards;
-    /* padding-top: 40px; */
-    padding-top: 60px;
-    margin-right: 80px;
 }
 
-footer a:link, footer a:visited{
-    color:rgb(219,112,147);   
-    padding-top: 40px;
-    margin-right: 80px; 
+footer a:link, footer a:visited {
+    color:rgb(219,112,147);
+}
+
+#links {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+}
+
+#copyright {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+
 }
