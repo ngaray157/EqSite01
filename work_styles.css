@@ -1,11 +1,18 @@
 @charset "utf-8";
+/* ///////////////////////////////////////// */
+/* ANIMATION FOR NAV BAR HOVER COLOR CHANGE */
+/* /////////////////////////////////////// */
+
 
 @keyframes hover{
     from {color:rgb(219,112,147);}
     to {color:rgb(192, 13, 73);}
 }
 
-/* General Styles */
+/* //////////////////// */
+/* GENERAL PAGE STYLES */
+/* ////////////////// */
+
 html{
     background-color:rgb(255,228,225);
     /* font-family: Verdana, Geneva, Tahoma, sans-serif;  */
@@ -18,13 +25,12 @@ body{
     margin-right: auto;
 }
 
-img#weight_page{
+/* img#weight_page{
     width: 35%;
     height: 400px;
-}
+} */
 
 header img{
-    margin-right: auto;
     float: left;
     padding-left: 40px;
     padding-top: 20px;
