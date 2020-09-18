@@ -3,131 +3,183 @@
 /* ANIMATION FOR NAV BAR HOVER COLOR CHANGE */
 /* /////////////////////////////////////// */
 
-
-@keyframes hover{
-    from {color:rgb(219,112,147);}
-    to {color:rgb(192, 13, 73);}
+@keyframes hover {
+  from {
+    color: rgb(219, 112, 147);
+  }
+  to {
+    color: rgb(192, 13, 73);
+  }
 }
 
 /* //////////////////// */
 /* GENERAL PAGE STYLES */
 /* ////////////////// */
 
-html{
-    background-color:rgb(255,228,225);
-    /* font-family: Verdana, Geneva, Tahoma, sans-serif;  */
-    font-family: 'Work Sans', sans-serif;
+html {
+  background-color: rgb(255, 228, 225);
+  /* font-family: Verdana, Geneva, Tahoma, sans-serif;  */
+  font-family: "Work Sans", sans-serif;
 }
 
-body{
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
+body {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
+header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
 /* img#weight_page{
     width: 35%;
     height: 400px;
 } */
 
-header img{
-    float: left;
-    padding-left: 40px;
-    padding-top: 20px;
+header img {
+  float: left;
+  padding-left: 40px;
+  padding-top: 20px;
 }
 
-section#intro p#pastwork{
-    color:rgb(219,112,147);
-    font-size: 4.5em;
-    text-align: center;
-    font-weight: bold;
-    font-style: italic;
-    padding-bottom: 2px;
-    padding-top: 220px;
-    margin-bottom: 100px;
-    line-height: 4px;
+section#intro p#pastwork {
+  color: rgb(219, 112, 147);
+  font-size: 4.5em;
+  text-align: center;
+  font-weight: bold;
+  font-style: italic;
+  padding-bottom: 2px;
+  padding-top: 220px;
+  margin-bottom: 100px;
+  line-height: 4px;
 }
 
-section#photo1 img#weight_page{
-    padding-left: 615px;
-    padding-bottom: 400px;
-    padding-top: 200px;
-}
-/* Top Right Nav Styles */
-
-nav a{
-    text-decoration: none;
+section#photo1 img#weight_page {
+  padding-left: 615px;
+  padding-bottom: 400px;
+  padding-top: 200px;
 }
 
-header nav.topRight{
-    margin-left: auto;
-    margin-right: 2px;
-    width: 24%;
-}
+/* ///////////////////////// */
+/* TOP RIGHT NAV BAR STYLES */
+/* /////////////////////// */
+/* UPDATED WITH FLEX BOX */
 
-nav.topRight ul{
+
+.topRight {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+  
     list-style-type: none;
+    margin: 0px;
+    background-color: rgb(255, 228, 225);
     font-size: 1.3em;
-}
-nav.topRight a:link, nav.topRight a:visited{
-    color:rgb(219,112,147);     
-    padding-top: 40px;
-    margin-right: 80px;
+    letter-spacing: 3px;
+  }
+
+  .topRight a {
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+    color: rgb(219, 112, 147);
+  }
+  
+  .topRight a#other:hover,
+  .topRight a#other:active {
+    color: rgb(219, 112, 147);
+  }
+  
+  .topRight a#other:hover,
+  .topRight a#other:active {
+    animation-name: hover;
+    animation-duration: 1.3s;
 }
 
-nav.topRight a#other:hover, nav.topRight a#other:active{
-    animation-name: hover;
-    animation-duration: 1.3s;     /* this fades the color of the top right links to a different color */
-    animation-fill-mode: forwards;
-    /* animation-timing-function: ease-out; */
-    padding-top: 40px;
-    margin-right: 80px;
+.topRight a#current {
+    color: rgb(192, 13, 73);
 }
+
+
+/* nav a {
+  text-decoration: none;
+}
+
+header nav.topRight {
+  margin-left: auto;
+  margin-right: 2px;
+  width: 24%;
+}
+
+nav.topRight ul {
+  list-style-type: none;
+  font-size: 1.3em;
+}
+nav.topRight a:link,
+nav.topRight a:visited {
+  color: rgb(219, 112, 147);
+  padding-top: 40px;
+  margin-right: 80px;
+} */
+
+/* nav.topRight a#other:hover,
+nav.topRight a#other:active {
+  animation-name: hover;
+  animation-duration: 1.3s; /* this fades the color of the top right links to a different color */
+  animation-fill-mode: forwards;
+  /* animation-timing-function: ease-out; */
+  padding-top: 40px;
+  margin-right: 80px;
+} */
 
 /* fancy nav thing */
 
-nav.topRight a#current{
-    color:rgb(192, 13, 73);
-    padding-top: 40px;
-    margin-right: 80px;
-}
+/* nav.topRight a#current {
+  color: rgb(192, 13, 73);
+  padding-top: 40px;
+  margin-right: 80px;
+} */
 
 /* Footer Stuff */
 
-footer{
-    width: 100%;
-    position: absolute;
-    height: 8em;
-    background-color:rgba(219,112,147,0.3);
-    color:rgb(219,112,147);
-    font-family: 'Roboto Condensed', sans-serif;
-    text-align: center;
+footer {
+  width: 100%;
+  position: absolute;
+  height: 8em;
+  background-color: rgba(219, 112, 147, 0.3);
+  color: rgb(219, 112, 147);
+  font-family: "Roboto Condensed", sans-serif;
+  text-align: center;
 }
 
-footer a{
-    text-decoration: none;
+footer a {
+  text-decoration: none;
 }
 
-footer div#links{
-    padding-top: 20px;
-    padding-left: 90px;
+footer div#links {
+  padding-top: 20px;
+  padding-left: 90px;
 }
-footer div#copyright{
-    display: block;
-    padding-top: 67px;
-}
-
-footer a#other:hover, footer a#other:active{
-    animation-name: hover;
-    animation-duration: 1.3s;     
-    animation-fill-mode: forwards;
-    /* padding-top: 40px; */
-    padding-top: 60px;
-    margin-right: 80px;
+footer div#copyright {
+  display: block;
+  padding-top: 67px;
 }
 
-footer a:link, footer a:visited{
-    color:rgb(219,112,147);   
-    padding-top: 40px;
-    margin-right: 80px; 
+footer a#other:hover,
+footer a#other:active {
+  animation-name: hover;
+  animation-duration: 1.3s;
+  animation-fill-mode: forwards;
+  /* padding-top: 40px; */
+  padding-top: 60px;
+  margin-right: 80px;
+}
+
+footer a:link,
+footer a:visited {
+  color: rgb(219, 112, 147);
+  padding-top: 40px;
+  margin-right: 80px;
 }

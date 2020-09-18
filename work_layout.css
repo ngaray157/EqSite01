@@ -1,7 +1,7 @@
-@charset "UTF-8";
+/* @charset "UTF-8";
 /* Header Navigation Layout */
 
-header > nav{
+/* header > nav{
     display: table;
     width: 100%;
 }
@@ -19,4 +19,4 @@ header > nav > ul > li{
 header > nav a{
     display: block;
     width: 100%;
-}
+}  */

@@ -3,108 +3,111 @@
 /* ANIMATION FOR NAV BAR HOVER COLOR CHANGE */
 /* /////////////////////////////////////// */
 
-@keyframes hover{
-    from {color:rgb(219,112,147);}
-    to {color:rgb(192, 13, 73);}
+@keyframes hover {
+  from {
+    color: rgb(219, 112, 147);
+  }
+  to {
+    color: rgb(192, 13, 73);
+  }
 }
 
 /* //////////////////// */
 /* GENERAL PAGE STYLES */
 /* ////////////////// */
 
-
-html{
-    background-color:rgb(255,228,225);
-    /* font-family: Verdana, Geneva, Tahoma, sans-serif;  */
-    font-family: 'Work Sans', sans-serif;
+html {
+  background-color: rgb(255, 228, 225);
+  /* font-family: Verdana, Geneva, Tahoma, sans-serif;  */
+  font-family: "Work Sans", sans-serif;
 }
 
-body{
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
+body {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
+header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
 
-header img{
-    float: left;
-    padding-left: 40px;
-    padding-top: 20px;
- }  
+header img {
+  float: left;
+  padding-left: 40px;
+  padding-top: 20px;
+}
 
 .indexView {
-    height: 100vh;
+  height: 100vh;
 }
-
 
 /* //////////////////////////////// */
 /* INTRODUCTION PINK DIV CONTAINER */
 /* ////////////////////////////// */
 
 #introContainer {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
 
-    background-color:rgb(255,228,225);
-    width: 100%;
-    
+  background-color: rgb(255, 228, 225);
+  width: 100%;
 }
 
 section#introBlurb {
-    text-align: center;
+  text-align: center;
 }
 
 p#firstLine {
-    color:rgb(219,112,147);
-    font-size: 4.5em;
-    font-weight: bold;
-    font-style: italic;
-    font-family: 'Work Sans', sans-serif;
-    /* line-height: 4px; */
+  color: rgb(219, 112, 147);
+  font-size: 4.5em;
+  font-weight: bold;
+  font-style: italic;
+  font-family: "Work Sans", sans-serif;
+  /* line-height: 4px; */
 }
 
-p#secondLine { 
-    color:rgb(219,112,147);
-    font-size: 2.5em;
-    font-weight: lighter;
+p#secondLine {
+  color: rgb(219, 112, 147);
+  font-size: 2.5em;
+  font-weight: lighter;
 }
-
 
 /* ////////////////////////////// */
 /* GREETINGS WHITE DIV CONTAINER */
 /* //////////////////////////// */
 
-
 #greetingContainer {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
 
-    width: 100%;
-    letter-spacing: 4px;
-    background-color: whitesmoke;
-    text-align: center;
+  width: 100%;
+  letter-spacing: 4px;
+  background-color: whitesmoke;
+  text-align: center;
 }
-
 
 #greetingContainer p#hi {
-    font-size: 2em;
-    font-weight: bold;
-    color: rgb(219,112,147);
-    margin-left: auto;
-    margin-right: auto;;
+  font-size: 2em;
+  font-weight: bold;
+  color: rgb(219, 112, 147);
+  margin-left: auto;
+  margin-right: auto;
 }
 
-#greetingContainer p#hi2{
-    color: rgb(219,112,147);
-    font-size: 1.6em;
-    font-weight: lighter;
-    font-family: 'Work Sans', sans-serif;
+#greetingContainer p#hi2 {
+  color: rgb(219, 112, 147);
+  font-size: 1.6em;
+  font-weight: lighter;
+  font-family: "Work Sans", sans-serif;
 
-    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+  /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
     'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
 }
 
@@ -114,65 +117,62 @@ p#secondLine {
     margin-left: auto;
 } */
 
-
 /* //////////////// */
 /* SKILLS PINK DIV */
 /* ////////////// */
 
+#skillContainer {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
 
-#skillContainer{
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
-
-    text-align: center;
-    background-color: rgb(255,228,225);
-    letter-spacing: 4px;
-    width: 100%;
+  text-align: center;
+  background-color: rgb(255, 228, 225);
+  letter-spacing: 4px;
+  width: 100%;
 }
 
 section#focusBlurb {
-    padding: 10px;
+  padding: 10px;
 }
 
 section#focusBlurb {
-    padding: 10px;
+  padding: 10px;
 }
 
-p#skill{
-    font-size: 2em;
-    font-weight: bold;
-    color:rgb(219,112,147);
-    margin-top: 0px;
-    margin-bottom: 0px;
+p#skill {
+  font-size: 2em;
+  font-weight: bold;
+  color: rgb(219, 112, 147);
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
-p#skillInfo{
-    color: rgb(219,112,147);
-    font-size: 1.7em;
-    font-weight: lighter;
-    font-family: 'Work Sans', sans-serif;
-    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+p#skillInfo {
+  color: rgb(219, 112, 147);
+  font-size: 1.7em;
+  font-weight: lighter;
+  font-family: "Work Sans", sans-serif;
+  /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
      'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
 }
 
-p#focus{
-    font-size: 2em;
-    font-weight: bold;
-    color:rgb(219,112,147);
-    margin-top: 0px;
-    margin-bottom: 0px;
+p#focus {
+  font-size: 2em;
+  font-weight: bold;
+  color: rgb(219, 112, 147);
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
-p#focusInfo{
-    color: rgb(219,112,147);
-    font-size: 1.7em;
-    font-weight: lighter;
-    font-family: 'Work Sans', sans-serif;
-    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+p#focusInfo {
+  color: rgb(219, 112, 147);
+  font-size: 1.7em;
+  font-weight: lighter;
+  font-family: "Work Sans", sans-serif;
+  /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
      'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
 }
-
 
 /* section#skillBlurb{
     margin-right: auto;
@@ -186,97 +186,96 @@ section#focusBlurb{
     padding: 100px;
 } */
 
-
-
 /* ///////////////////////// */
 /* TOP RIGHT NAV BAR STYLES */
 /* /////////////////////// */
 /* UPDATED WITH FLEX BOX */
 
 .topRight {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: flex-end;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
 
-    list-style-type: none;
-    margin: 0px;
-    background-color:rgb(255,228,225);
-    font-size: 1.3em;
-    letter-spacing: 3px;
+  list-style-type: none;
+  margin: 0px;
+  background-color: rgb(255, 228, 225);
+  font-size: 1.3em;
+  letter-spacing: 3px;
 }
 
 .topRight a {
-    text-decoration: none;
-    display: block;
-    padding: 1em;
-    color: rgb(219,112,147);
+  text-decoration: none;
+  display: block;
+  padding: 1em;
+  color: rgb(219, 112, 147);
 }
 
-.topRight a#other:hover, .topRight a#other:active {
-    color: rgb(219,112,147);
+.topRight a#other:hover,
+.topRight a#other:active {
+  color: rgb(219, 112, 147);
 }
 
-.topRight a#other:hover, .topRight a#other:active {
-    animation-name: hover;
-    animation-duration: 1.3s;
+.topRight a#other:hover,
+.topRight a#other:active {
+  animation-name: hover;
+  animation-duration: 1.3s;
 
-     /* this fades the color of the top right links to a different color */
-    /* animation-fill-mode: forwards; */
-    /* animation-timing-function: ease-out; */
+  /* this fades the color of the top right links to a different color */
+  /* animation-fill-mode: forwards; */
+  /* animation-timing-function: ease-out; */
 }
 
 .topRight a#current {
-    color:rgb(192, 13, 73);
+  color: rgb(192, 13, 73);
 }
-
-
 
 /* ////////////// */
 /* FOOTER STYLES */
 /* //////////// */
 /* UPDATED WITH FLEX BOXES */
 
-footer{ 
-    display: flex;
-    flex-flow: column wrap;
-    /* justify-content: center; */
-    /* padding: 5px; */
-    
-    font-size: 1.5em;
-    background-color: rgba(219,112,147,0.3);
-    color:rgb(219,112,147);
-    font-family: 'Roboto Condensed', sans-serif;
-    position: absolute;
-    width: 100%;
+footer {
+  display: flex;
+  flex-flow: column wrap;
+  /* justify-content: center; */
+  /* padding: 5px; */
+
+  font-size: 1.5em;
+  background-color: rgba(219, 112, 147, 0.3);
+  color: rgb(219, 112, 147);
+  font-family: "Roboto Condensed", sans-serif;
+  position: absolute;
+  width: 100%;
 }
 
-footer a{
-    text-decoration: none;
-    display: flex;
-    flex-flow: row wrap;
-    align-content: flex-end;
-    padding: 5px;
+footer a {
+  text-decoration: none;
+  display: flex;
+  flex-flow: row wrap;
+  align-content: flex-end;
+  padding: 5px;
 }
 
-footer a#other:hover, footer a#other:active{ 
-    animation-name: hover;
-    animation-duration: 1.3s;     
-    animation-fill-mode: forwards;
+footer a#other:hover,
+footer a#other:active {
+  animation-name: hover;
+  animation-duration: 1.3s;
+  animation-fill-mode: forwards;
 }
 
-footer a:link, footer a:visited {
-    color:rgb(219,112,147);
+footer a:link,
+footer a:visited {
+  color: rgb(219, 112, 147);
 }
 
 #links {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-around;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
 }
 
 #copyright {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
 }
